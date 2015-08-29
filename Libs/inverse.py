@@ -12,15 +12,9 @@ def inverse(a,n):
         new_r= r-(quotient*new_r);
         r=temp;
     if r>1:
-        print "a is not invertible!"
+        print ("a is not invertible!");
         t=-n;
     if t<0:
         t=t+n;
     return t;
 
-
-e=input("Enter encryption key:");
-n=input("Enter N:");
-
-d=inverse(e,n);
-print d;
